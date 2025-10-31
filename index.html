@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lieferjando</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Inter font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,200&display=swap" rel="stylesheet">
+        <!-- Smythe font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="./index.css">
+       <!-- Font Awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <h1>Jimmy's Dinner</h1>
+            <h6>The best burgers and pizzas in town.</h6>
+        </header>
+        <main>
+            <div class="container">
+                <section>
+                    <div class="food-menu" id="food-menu">
+                    </div>
+                </section>
+                <section>
+                    <div class="checkout" id="checkout">
+                    </div> 
+                </section>
+            </div>
+        </main>
+        <div id="payment-form" class="payment-form">
+            <h3 class="form-heading">Enter card details</h3>
+            <form id="payment-information">
+                <input
+                required 
+                type="text"
+                placeholder="Enter your name"
+                id="customerName"
+                name="customerName"
+                minlength="3"
+                maxlength="50"
+                oninvalid="this.setCustomValidity('Name must be 3-50 characters long. Letters only.')"
+                pattern="[a-zA-Z\s]+"
+                >
+                <input
+                required
+                type="text"
+                placeholder="Enter card number"
+                id="cardNumber"
+                name="cardNumber"
+                minlength="19"
+                maxlength="19"
+                oninvalid="this.setCustomValidity('Please enter a valid card.')"
+                >
+                <input
+                required
+                type="text"
+                placeholder="Enter CVV"
+                id="cvv"
+                name="cvv"
+                minlength="3"
+                maxlength="3"
+                oninvalid="this.setCustomValidity('CVV must be 3 characters.')"
+               >
+               <button type="submit" id="payment-btn" class="payment-btn">Pay</button>
+            </form>
+        </div>
+	    <script type="module" src="index.js"></script>
+    </body>
+</html>
+

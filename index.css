@@ -1,0 +1,352 @@
+
+/* Typography */
+body {
+    margin: 0;
+    font-family: 'Smythe', system-ui;
+} 
+
+h1{
+    line-height: 0.615;
+    font-size: 2.4375rem;
+    padding-bottom: 0.41em;
+}
+h4{
+    font-size: 1.75rem;
+    line-height: 0.6;
+}
+
+h5{
+    font-size: 1.25rem;
+    line-height: 0.833;
+}
+
+p{
+    line-height: 1.5;
+}
+
+h6{
+    line-height: 0.615;
+    font-size: 1.38rem;
+}
+
+h1, h4, h5, h6, p {
+    margin:0;
+}
+
+header{
+    width:84.667%;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #fff;
+    background-image: url('./images/header.png');
+    background-size: cover;
+    background-position: center;
+    padding: 3.5625em 2.875em;
+}
+
+i{
+    color: #F59E0B;
+    font-size: 2.5rem;
+}
+
+/* Layout */
+section{
+    display: flex;
+    justify-content: center;
+}
+
+/* Menu Items */
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    width: 147%;
+    padding-bottom: 3.1875em;
+    margin-top: 2.8125em;
+    border-bottom: 0.0625em solid #D2D2D2;
+}
+
+.food-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item:first-child{
+    margin-top: 4.1875em;
+}
+
+.menu-information{
+    display: flex;
+    align-items: center;
+    gap: 0.625em;
+    justify-content: flex-start;
+}
+
+.emoji{
+    font-size: 4.92rem;
+    line-height: 1.25;
+    letter-spacing: -2%;
+    color: #000;
+    
+}
+
+.ingredients{
+    margin: 0.5em 0;
+}
+
+.price{
+    margin: 0.0626em 0;
+}
+
+.btn-container{
+    margin-top: 0.3125em;
+}
+
+.add-item-btn{
+    border: 0.046em solid #DEDEDE;
+    border-radius: 50%;
+    background: inherit;
+    color: #3C3C3C;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    line-height: 0.75;
+    padding: 0.21875em 0.34375em 0.328125em 0.375em;
+}
+
+/* Checkout section */
+.checkout{
+    margin-top: 2.8125em;
+    text-align: center;
+    width: 93%;
+}
+
+.item-container{
+    margin: 0.625em auto;
+}
+
+.your-order{
+    margin-bottom: 3em;
+}
+
+.discount{
+    text-align: left;
+}
+.total-price{
+    padding-top: 0.875em;
+    margin-top: 1.3125em;
+    border-top: 0.125em solid #393333;
+}
+
+.remove-item{
+    font-size: 0.75rem;
+    line-height: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #BBBBBB;
+    padding: 0.0833em;
+}
+
+
+.checkout-btn-container{
+    margin-top: 3.3125em;
+
+}
+
+.checkout-btn{
+    display: inline-block;
+    white-space: nowrap;
+    background: #16DB99;
+    border:none;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 100%;
+    padding: 1.125em 12.125em;
+    margin-bottom: 3.3125em;
+}
+
+/* Payment form */
+.payment-form{
+    position: fixed;
+    top: 25.15vh;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+    display: none;
+    width: 87.333%;
+    max-width: 508px;
+    /* height: 90.333vw; */
+    padding: 0.5625em 0 1.875em 0;
+    box-shadow: 0.325em 0.325em 16em 0 #00000080;
+    background: #fff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    
+}
+
+@media (min-aspect-ratio: 1.4){
+    .payment-form{
+        top: 5vh;
+    }
+}
+
+@media (min-aspect-ratio: 1.0){
+    .payment-form{
+        top: 0;
+    }
+}
+
+.form-heading{
+    margin-bottom: 1.9167em;
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+input{
+    width: 88%;
+    border: 0.13em solid #757575;
+    border-radius: 0.195em;
+    color: #757575;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.55;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.825em 0 0.69em 1.325em;
+    margin-bottom: 1.1615em;
+}
+
+.payment-btn{
+    background: #16DB99;
+    border: none;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1.03125em 44% 0.8625em 44%;
+    margin-top: 1.45em;
+}
+
+/* Loading screen */
+.container-loading{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.0625rem;
+}
+
+.loading{
+    margin-top: 0.5455em;
+    width: 65%;
+}
+
+#loading-text{
+    margin-top: 0.7273em;
+    margin-bottom: 1.1818em;
+}
+
+/* Payment success message */
+.payment-success{
+    display: flex;
+    white-space: nowrap;
+    gap: 2.8125em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.payment-success-message-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-success-message{
+    font-size: 2rem;
+    line-height: 0.5253;
+    padding: 1.59375em 2.0625em 1.625em 1.84375em;
+    background: #ECFDF5;
+}
+
+/* Rating stars */
+.rate-experience{
+    font-size: 2rem
+}
+
+.rating-container{
+    margin-bottom: 8.833vw;
+}
+
+/* utility classes */
+.align-center{
+    text-align: center;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.green{
+    color: #065F46;
+}
+
+
+
+@media(max-width: 500px){
+    html{
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 434px){
+    html{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 400px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 364px){
+    html{
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 334px){
+    html{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 300px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media(max-width: 272px){
+    html{
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 244px){
+    html{
+        font-size: 7px;
+    }
+}
