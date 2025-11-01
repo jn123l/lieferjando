@@ -66,7 +66,7 @@ section{
 .menu-item{
     display: flex;
     justify-content: space-between;
-    width: 130%;
+    width: 125%;
     padding-bottom: 3.1875em;
     margin-top: 2.8125em;
     border-bottom: 0.0625em solid #D2D2D2;
