@@ -35,7 +35,6 @@ h1, h4, h5, h6, p {
 
 header{
     width:84.667%;
-    max-width: 600px;
     margin: 0 auto;
     color: #fff;
     background-image: url('./images/header.png');
@@ -58,7 +57,6 @@ section{
 /* Menu Items */
 .container{
     width: 100%;
-    max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -101,7 +99,8 @@ section{
 }
 
 .ingredients{
-    margin: 0.5em 0;
+    margin: 0.333em 0;
+    font-size: 1.5rem;
 }
 
 .price{
@@ -185,7 +184,6 @@ section{
     margin: 0 auto;
     display: none;
     width: 87.333%;
-    max-width: 508px;
     /* height: 90.333vw; */
     padding: 0.5625em 0 1.875em 0;
     box-shadow: 0.325em 0.325em 16em 0 #00000080;
@@ -194,6 +192,22 @@ section{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     
+}
+
+@media (max-height: 485px) and (orientation: landscape){
+    .payment-form{
+        max-width: 333.33px !important; 
+        padding: 0.375em 0 1.25em 0; 
+    }
+    .form-heading{
+        font-size: 1rem !important;
+    }
+    input{
+        font-size: 0.8333rem !important;
+    }
+    .payment-btn{
+        font-size: 0.667rem !important;
+    }
 }
 
 @media (min-aspect-ratio: 1.4){
@@ -301,7 +315,17 @@ input{
     color: #065F46;
 }
 
-
+@media (orientation: landscape){
+    header{
+        max-width: 600px;
+    }
+    .container{
+        max-width: 600px;
+    }
+    .payment-form{
+        max-width: 508px;
+    }
+}
 
 @media(max-width: 500px){
     html{
