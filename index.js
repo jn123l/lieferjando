@@ -194,7 +194,7 @@ function renderCheckout(){
 
         checkoutHtml += `
         <div class="space-between item-container">
-           <h4 class="item-checkout">${item.name} &nbsp x ${calculateItemAmount(item.name)} <span class="remove-item" data-remove='${item.id}'>(remove)</span></h4>
+           <h4 class="item-checkout">${calculateItemAmount(item.name)}x ${item.name}<span class="remove-item" data-remove='${item.id}'>(remove)</span></h4>
            <h5 class="item-checkout">$${calculateItemsPrice(item)}</h5> 
         </div>
         `
